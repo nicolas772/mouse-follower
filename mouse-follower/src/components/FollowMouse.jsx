@@ -19,6 +19,9 @@ export const FollowMouse = () => {
     //eliminar cursor con un cambio en el className
     useEffect(() => {
         document.body.classList.toggle('no-cursor', enabled)
+        return () => { //cleanup method
+            document.body.classList.remove('no-cursor', enabled)
+        }
     }, [enabled])
 
     return (
