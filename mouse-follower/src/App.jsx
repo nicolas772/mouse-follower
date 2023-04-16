@@ -1,11 +1,12 @@
-import './App.css'
+import { FollowMouse } from "./components/FollowMouse";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <h1>Hola</h1>
+    <main>
+      <FollowMouse></FollowMouse>
+    </main>
+
   )
 }
 
-export default App
+export default App;
